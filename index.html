@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rapid Hub Foundation - CSS</title>
+        <style>
+            /* selection by element name */
+            /* h1 {
+                color:green;
+            } */
+
+            /* selection by ID */
+            /* #headID {
+                color: green;
+            } */
+            /* selection by class name */
+            /* .color-green{
+                color:green;
+            }
+            .make-big{
+                font-size: 100px;
+            } */
+
+            /* selection by heritage */
+            body > h1:first-child{
+                color: green;
+            }
+            /* selection by attribute */
+            input[type="text"] {
+                width: 300px;
+                height: 50px;
+            }
+            /* selection by grouping */
+            h3, ul,form {
+                margin-left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1 id="headID" class="color-green make-big">CSS Tutorial</h1>
+        <h1>More Header</h1>
+     
+        <h3>Names of Students</h3>
+        <ul>
+            <li>Elijah</li>
+            <li>John</li>
+            <li>Mary</li>
+            <li>Jane</li>
+            <li>James</li>
+        </ul>
+        <form action="#">
+            <input type="text" name="username" placeholder="Enter Username">
+            <input type="text" name="fullname" placeholder="Enter Full Name">
+
+            <input type="number" name="age" placeholder="Enter Age">
+        </form>
+        <div>
+            <h1>Child h1 Css Tutorial</h1>
+            <div>
+                <h1>Grand Child H1</h1>
+            </div>
+        </div>
+    </body>
+</html>
